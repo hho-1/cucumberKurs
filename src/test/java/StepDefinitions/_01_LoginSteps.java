@@ -18,12 +18,14 @@ import static Utilities.GenelWebDriver.driver;
 public class _01_LoginSteps {
 
     DialogContent dc = new DialogContent();
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
     @Given("Navigate to basqar")
     public void navigateToBasqar() {
 
         GenelWebDriver.getDriver().get("https://demo.mersys.io/");
         GenelWebDriver.getDriver().manage().window().maximize();
+        wait.until(ExpectedConditions.elementToBeClickable(dc.acceptCookies)).click();
     }
 
     @When("Enter username and password and click on login button")
