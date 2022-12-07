@@ -14,10 +14,14 @@ Feature: Citizenship with Scenario Outline
     Then Already exists message should be displayed
     And Click on close button
 
-      Examples:
-        | CitizenshipName | ShortName |
-        | marsli          | mrs       |
-        | jupiterli       | jp        |
-        | saturnlu        | st        |
-        | venuslu         | vns       |
-        | neptunlu        | npt       |
+    When User delete the "<CitizenshipName>"
+    Then Success message should be displayed
+
+
+    Examples:
+      | CitizenshipName | ShortName |
+      | marsli-26g6       | mrs       |
+      | jupiterli-285g1      | jp        |
+      | saturnlu-821g5       | st        |
+      | venuslu-218g        | vns       |
+      | neptunlu-4g8       | npt       |

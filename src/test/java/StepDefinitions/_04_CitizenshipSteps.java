@@ -33,6 +33,12 @@ public class _04_CitizenshipSteps {
 
     @And("Click on close button")
     public void clickOnCloseButton() {
+
         dc.findAndClick("closeDialogButton");
+    }
+
+    @When("User delete the {string}")
+    public void userDeleteThe(String searchName) {
+        dc.searchAndDelete(searchName);
     }
 }
