@@ -20,8 +20,8 @@ Feature: Citizenship with Scenario Outline
 
     Examples:
       | CitizenshipName | ShortName |
-      | marsli-26g6       | mrs       |
-      | jupiterli-285g1      | jp        |
-      | saturnlu-821g5       | st        |
-      | venuslu-218g        | vns       |
-      | neptunlu-4g8       | npt       |
+      | marsli-26g6     | mrs       |
+      | jupiterli-285g1 | jp        |
+      | saturnlu-821g5  | st        |
+      | venuslu-218g    | vns       |
+      | neptunlu-4g8    | npt       |

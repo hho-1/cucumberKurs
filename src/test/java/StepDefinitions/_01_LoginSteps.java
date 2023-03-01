@@ -23,7 +23,7 @@ public class _01_LoginSteps {
     @Given("Navigate to basqar")
     public void navigateToBasqar() {
 
-        GenelWebDriver.getDriver().get("https://demo.mersys.io/");
+        GenelWebDriver.getDriver().get("https://test.mersys.io/");
         GenelWebDriver.getDriver().manage().window().maximize();
         wait.until(ExpectedConditions.elementToBeClickable(dc.acceptCookies)).click();
     }
@@ -35,8 +35,8 @@ public class _01_LoginSteps {
         //dc.password.sendKeys("Richfield2020!");
         //dc.loginButton.click();
 
-        dc.findAndSendKeys("username", "richfield.edu");
-        dc.findAndSendKeys("password", "Richfield2020!");
+        dc.findAndSendKeys("username", "turkeyts");
+        dc.findAndSendKeys("password", "TechnoStudy123");
         dc.findAndClick("loginButton");
 
     }
